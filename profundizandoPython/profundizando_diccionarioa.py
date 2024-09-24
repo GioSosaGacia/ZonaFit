@@ -14,7 +14,7 @@ print(diccionario)
 diccionario['Departamento'] = 'sistemas'
 print(diccionario)
 
-#los diccionario no tienen valore duplicados, si ya existe solo cambia el valor
+#los diccionario no tienen valores duplicados, si ya existe solo cambia el valor
 diccionario['nombre'] = 'Giovanni' #es sensible a altas y bajas
 print(diccionario)
 
@@ -23,7 +23,7 @@ print(diccionario)
 print(diccionario['nombre'])
 '''Si no encuentra la llave lanza una exepción'''
 #print(diccionario['Nombre'])
-'''metodo get recupera un allave, y si no existe no mande exepción '''
+'''metodo get recupera una llave, y si no existe no mande exepción '''
 #retorna un valor aunque no exista la llave
 print(diccionario.get('Nombre','No se encontro la llave'))
 print(diccionario)
@@ -36,7 +36,7 @@ print(nombre)
 print(diccionario)
 
 
-'''imprimir un diccionario con el metoro pprint'''
+'''imprimir un diccionario con el metodo pprint'''
 from pprint import pprint as pp #pprint agrega un orden de la impresion de manera ascendente
 help(pp)
 pp(diccionario,sort_dicts=False)#sort_dicts evita que se ordene el diccionario
