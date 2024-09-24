@@ -1,4 +1,4 @@
-'''Mas de funciones anidadas u alcance de variables'''
+'''Mas de funciones anidadas y alcance de variables'''
 '''Una variable local interna anidada no se puede utilizar en una funcion no anidada, solo de afuera hacia adentro'''
 
 def funcion_externa():
