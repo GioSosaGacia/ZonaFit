@@ -19,3 +19,43 @@ print(next(multiplicacion))
 import math
 suma = sum(valor * valor for valor in range(4))
 print(f'Resultado de la suma: {suma}')
+
+
+
+
+'''
+    Expresiones generadoras con listas
+    Tambien podemos utilizar una lista o cualquier otro iterador
+    Los genradores se utilizan para recumerar grandes cantidades de datos a demanda
+'''
+lista = ['Juan','Perez']
+#creamos el generador, si no lo pasamos como argumento a una función debemos de usar()
+#recuperar datos a traves de un generador
+generador = (valor for valor in lista)
+print(next(generador))
+print(next(generador))
+
+
+
+
+
+'''
+Crear un str a partir de un generador, creado a partir de una lista
+'''
+lista = ['Karla','Gomez']
+contador = 0
+#Definimos una funcion para incrementar contador
+def incrementar():
+    global contador
+    contador += 1
+    return contador
+#La primera parte es el yiel y la segunda el for, entre ()
+'''el . quiere decir a donde se le aplicara el metodo, aqui usamos la funcion incrementar la cual se aplicara al nombre dentro del ciclo for'''
+generador = (f'{incrementar()}.{nombre}' for nombre in lista)
+'''generador lo convertimos a una lista'''
+lista = list(generador)
+print(lista)
+
+'''Generar una cadena a partir de una lista'''
+cadena = ', '.join(lista)
+print(f'Cadena generada partir de la lista: {cadena}')

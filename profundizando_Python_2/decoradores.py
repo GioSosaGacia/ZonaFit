@@ -22,6 +22,8 @@ def mostrar_mensaje():
 
 mostrar_mensaje()
 
+
+
 '''Un decorador no solo sirve para modificar una funcion, si no varias'''
 @funcion_decorador_a
 def imprimir():
@@ -51,3 +53,7 @@ def sumar(a,b):
 
 resultado = sumar(5,6)
 print(f'Resultado de la suma: {resultado}')
+
+
+
+
