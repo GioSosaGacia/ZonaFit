@@ -1,7 +1,7 @@
 '''
 expresion generadora: es un generador anonimo
     una expresion generadora debe de estar entre parentesis para que sea valida,
-    execto cuando se pasa a una funcion y esta sea una funcion valida
+    excepto cuando se pasa a una funcion y esta sea una funcion valida
 '''
 
 #el valor de la derecha es asignado al for para crear el generador que se almacenara en la var multuplicacion
