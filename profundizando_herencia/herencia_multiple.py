@@ -86,3 +86,16 @@ print(lista_emteros_ordenada)
 print(ListaEnterosOrdenada.__bases__)
 #MRO methond resolution Order
 print(ListaEnterosOrdenada.__mro__)
+
+
+
+#isinstance
+#The isinstance() function returns True if the specified object is of the specified type, otherwise False.
+#If the type parameter is a tuple, this function will return True if the object is one of the types in the tuple.
+print('Es Entero?', isinstance(10,int))
+print('Es un STR?',isinstance('Hola',str))
+print('Es una lista ent?', isinstance(lista_emteros_ordenada, ListaEnteros))
+print('Es una lista ent, ord?', isinstance(lista_emteros_ordenada, ListaEnterosOrdenada))
+print('Es una lista simple?', isinstance(lista_emteros_ordenada, ListaSimple))
+#Tambien podemos pregunstar si la misma es una instancia de varios tipos
+print('Es de varios tipos?', isinstance(lista_emteros_ordenada,(ListaSimple,ListaOrdenada,ListaEnterosOrdenada)))
