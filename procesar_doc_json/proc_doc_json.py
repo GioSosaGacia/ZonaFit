@@ -1,5 +1,6 @@
 
 '''
+Procesar documentos JSON en Python
 JSON = JavaScrip Object Notation
 Se utiliza para enviar información entre sistemas cuando se esta trabajando con el concepto de web services o API's
 
